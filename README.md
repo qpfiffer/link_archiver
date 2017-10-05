@@ -11,5 +11,5 @@ Send this thing URLs, either through a small web interface or through JSON or wh
 
 ## Resources
 
-* [](http://sircmpwn.github.io/2017/06/19/Archive-it-or-miss-it.html)
-* [](https://www.gwern.net/Archiving-URLs)
+* http://sircmpwn.github.io/2017/06/19/Archive-it-or-miss-it.html
+* https://www.gwern.net/Archiving-URLs
