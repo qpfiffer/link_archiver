@@ -1,0 +1,23 @@
+name: link_archiver
+version: 0.1.0
+
+authors:
+  - name <qpfiffer@gmail.com>
+
+targets:
+  link_archiver:
+    main: src/main.cr
+
+# description: |
+#   Short description of link_archiver
+
+# dependencies:
+#   pg:
+#     github: will/crystal-pg
+#     version: "~> 0.5"
+
+# development_dependencies:
+#   webmock:
+#     github: manastech/webmock.cr
+
+# license: MIT
