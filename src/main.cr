@@ -9,7 +9,7 @@ def main()
     ctext.response.print "Hello world!"
   end
 
-  print "Listening on http://#{IP}:#{PORT}"
+  puts "Listening on http://#{IP}:#{PORT}"
   server.listen()
 end
 
