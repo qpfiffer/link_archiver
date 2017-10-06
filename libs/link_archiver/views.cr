@@ -2,13 +2,17 @@ module LinkArchiver
   abstract class View
     def _get_method_for_verb(verb : String)
       verb = verb.downcase()
-      map = {
-        "get" => ->get(String, HTTP::Request, HTTP::Server::Response)
-        #"post" => () -> { self.post,
-        #"put" => &->self.put,
-        #"patch" => &->self.patch,
-        #"delete" => &->self.patch,
-      }
+      case verb
+      when "get"
+        return ->get(String, HTTP::Request, HTTP::Server::Response)
+      when "put"
+        return ->put(String, HTTP::Request, HTTP::Server::Response)
+      when "patch"
+        return ->patch(String, HTTP::Request, HTTP::Server::Response)
+      when "post"
+        return ->post(String, HTTP::Request, HTTP::Server::Response)
+      when "delete"
+        return ->delete(String, HTTP::Request, HTTP::Server::Response)
 
       return map[verb]
     end
